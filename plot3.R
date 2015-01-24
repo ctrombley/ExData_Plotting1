@@ -1,3 +1,5 @@
+source('load_power_data.R')
+
 png(filename='./plot3.png', width=480, height=480)
 plot(power_data$Date + power_data$Time, power_data$Sub_metering_1, 
      type = 'l',
